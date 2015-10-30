@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Horical - Better The world</title>
+    <!-- CSS -->
+    <link href="./css/angular-material.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- SCRIPT -->
+    <script src="./js/angular.min.js"></script>
+    <script src="./js/angular-aria.min.js"></script>
+    <script src="./js/angular-animate.min.js"></script>
+    <script src="./js/angular-material.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+    // Include app dependency on ngMaterial
+    </script>
+</head>
+
+<body ng-app="YourApp" ng-controller="YourController">
+    <div id="home">
+        <md-toolbar layout="row" layout-align="start center">
+            <img src="./images/navbar-background.png" alt="">
+            <div flex-offset="10" flex="30" layout="row" layout-align="start center">
+                <img src="./images/logo.png" alt="logo website">
+            </div>
+            <div flex="50" layout="row" layout-align="end center" hide show-gt-md>
+                <div>
+                    <a href="#home">HOME</a>
+                </div>
+                <div><a href="#tech">TEACH</a></div>
+                <div><a href="#projects">PROJECT</a></div>
+                <div><a href="#team">TEAM</a></div>
+                <div><a href="#contact">CONTACT</a></div>
+            </div>
+            <div  flex hide-gt-md layout="row" layout-align="end center">
+                <md-button flex id="bars">
+                    <i class="fa fa-bars"></i>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <div layout="row" layout-align="start center">
+            <div flex-offset="10" flex="30" layout-align="start center">
+                <p>Every Thing You Need Is Here!</p>
+                <p>SOFTWARE</p>
+                <p>& GAME</p>
+                <div layout="row" layout-align="center center">
+                    <md-button class="md-raised" flex="50">KNOW MORE</md-button>
+                    <md-button class="md-raised" flex>PURCHASE NOW</md-button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div layout="column" layout-align="start center" id="tech">
+        <div layout="row" layout-align="center start">
+            <p>What we do?</p>
+        </div>
+        <div layout="row" layout-align="center start" layout-wrap>
+            <div flex="20" layout="column" layout-align="center center">
+                <img src="./images/nodejs.png" alt="nodejs">
+                <p>Nodejs</p>
+                <span>
+                Event-driven I/O server-side JavaScript environment based on V8. Includes API documentation, change-log, examples and announcements.
+            </span>
+            </div>
+            <div flex="20" layout="column" layout-align="center center">
+                <img src="./images/aws.png" alt="nodejs">
+                <p>AWS</p>
+                <span>
+                Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use.
+            </span>
+            </div>
+            <div flex="20" layout="column" layout-align="center center">
+                <img src="./images/rails.png" alt="nodejs">
+                <p>Ruby on Rail</p>
+                <span>
+                RoR home; full stack, Web application framework optimized for sustainable programming productivity ...
+            </span>
+            </div>
+            <div flex="20" layout="column" layout-align="center center">
+                <img src="./images/php.png" alt="nodejs">
+                <p>PHP</p>
+                <span>
+                Server-side HTML embedded scripting language. It provides web developers with a full suite of tools for building dynamic websites
+            </span>
+            </div>
+            <div flex="100" layout="row" layout-align="center start" id="btn-more" layout-wrap>
+                <div flex="20" layout="row" layout-align="center center">
+                    <md-button class="md-raised">More</md-button>
+                </div>
+                <div flex="20" layout="row" layout-align="center center">
+                    <md-button class="md-raised">More</md-button>
+                </div>
+                <div flex="20" layout="row" layout-align="center center">
+                    <md-button class="md-raised">More</md-button>
+                </div>
+                <div flex="20" layout="row" layout-align="center center">
+                    <md-button class="md-raised">More</md-button>
+                </div>
+            </div>
+            <div flex="100" layout="row" layout-align="center center">
+                <md-button class="md-raised btn-3dot" layout="row" layout-align="center center">
+                    <p>...</p>
+                </md-button>
+            </div>
+        </div>
+    </div>
+    <div id="projects" layout="column" layout-align="start center">
+        <div layout="row" layout-align="center center">
+            <p>Look at the projects</p>
+        </div>
+        <div layout="row" layout-align="center start" layout-fill id="project">
+            <div flex="25" layout="column" layout-align="center center">
+                <img src="./images/project1.png" alt="">
+                <img src="./images/project4.png" alt="">
+            </div>
+            <div flex="25" layout="column" layout-align="center center">
+                <img src="./images/project2.png" alt="">
+                <img src="./images/project5.png" alt="">
+            </div>
+            <div flex="25" layout="column" layout-align="center center">
+                <img src="./images/project3.png" alt="">
+                <img src="./images/project6.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="team" layout="column" layout-align="start center">
+        <div layout="row" layout-align="center center">
+            <p>Meet our team</p>
+        </div>
+        <div layout="row" layout-align="center center" layout-wrap>
+            <div flex="20" layout="row" layout-align="center center">
+                <div layout="column" layout-align="start center">
+                    <img src="./images/ceo.png" alt="CEO">
+                    <p class="name">Van Toan</p>
+                    <span>CEO</span>
+                    <div layout="row" layout-align="center center">
+                        <p flex="80" class="info">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequatilisis </p>
+                    </div>
+                    <div layout="row" layout-align="center center" class="social">
+                        <md-button class="md-fab md-mini fa fa-facebook" aria-label="facebook">
+                        </md-button>
+                        <md-button class="md-fab md-mini fa fa-twitter" aria-label="twitter">
+                        </md-button>
+                    </div>
+                </div>
+            </div>
+            <div flex="20" layout="row" layout-align="center center">
+                <div layout="column" layout-align="start center">
+                    <img src="./images/business.png" alt="business">
+                    <p class="name">TRiezzie</p>
+                    <span>Business</span>
+                    <div layout="row" layout-align="center center">
+                        <p flex="80" class="info">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequatilisis </p>
+                    </div>
+                    <div layout="row" layout-align="center center" class="social">
+                        <md-button class="md-fab md-mini fa fa-facebook" aria-label="facebook">
+                        </md-button>
+                        <md-button class="md-fab md-mini fa fa-twitter" aria-label="twitter">
+                        </md-button>
+                    </div>
+                </div>
+            </div>
+            <div flex="20" layout="row" layout-align="center center">
+                <div layout="column" layout-align="start center">
+                    <img src="./images/manager.png" alt="manager">
+                    <p class="name">Nhung Nguyen</p>
+                    <span>Manager</span>
+                    <div layout="row" layout-align="center center">
+                        <p flex="80" class="info">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequatilisis </p>
+                    </div>
+                    <div layout="row" layout-align="center center" class="social">
+                        <md-button class="md-fab md-mini fa fa-facebook" aria-label="facebook">
+                        </md-button>
+                        <md-button class="md-fab md-mini fa fa-twitter" aria-label="twitter">
+                        </md-button>
+                    </div>
+                </div>
+            </div>
+            <div flex="20" layout="row" layout-align="center center">
+                <div layout="column" layout-align="start center">
+                    <img src="./images/production.png" alt="production">
+                    <p class="name">Phat Lam</p>
+                    <span>Production</span>
+                    <div layout="row" layout-align="center center">
+                        <p flex="80" class="info">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequatilisis </p>
+                    </div>
+                    <div layout="row" layout-align="center center" class="social">
+                        <md-button class="md-fab md-mini fa fa-facebook" aria-label="facebook">
+                        </md-button>
+                        <md-button class="md-fab md-mini fa fa-twitter" aria-label="twitter">
+                        </md-button>
+                    </div>
+                </div>
+            </div>
+            <div flex="100" layout="row" layout-align="center center">
+                <md-button class="md-raised btn-3dot1" layout="row" layout-align="center center">
+                    <p>...</p>
+                </md-button>
+            </div>
+        </div>
+    </div>
+    <div id="contact" layout="column" layout="center center">
+        <div layout="row" layout-align="center center">
+            <p>Contact us</p>
+        </div>
+        <div layout="row" layout-align="center center">
+            <div flex="30" layout="column" layout-align="center center">
+                <input type="text" placeholder="Your Email" layout-margin>
+                <input type="text" placeholder="Your Message" layout-margin>
+            </div>
+            <div flex-offset="20" flex="30" layout="column" layout-align="start space-around" id="place">
+                <div layout="row" layout-align="space-around center">
+                    <i flex="10" class="fa fa-map-marker" layout-margin></i>
+                    <p flex layout-margin>Phòng 207, tòa nhà A, khu công nghệ phần mềm ĐHQG</p>
+                </div>
+                <div layout="row" layout-align="space-around center">
+                    <i flex="10" class="fa fa-phone" layout-margin></i>
+                    <p flex layout-margin>+9298377890</p>
+                </div>
+                <div layout="row" layout-align="space-around center">
+                    <i flex="10" class="fa fa-envelope" layout-margin></i>
+                    <p flex layout-margin>horical@gmai.com</p>
+                </div>
+                <div layout="row" layout-align="space-around center">
+                    <i flex="10" class="fa fa-globe" layout-margin></i>
+                    <p flex layout-margin>www.horical.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" layout="row" layout-align="center center">
+        <p flex="40">Copyright - Horical</p>
+        <div flex="40" layout="row" layout-align="center center" class="social">
+            <md-button class="md-fab md-mini fa fa-facebook" aria-label="facebook">
+            </md-button>
+            <md-button class="md-fab md-mini fa fa-twitter" aria-label="twitter">
+            </md-button>
+            <md-button class="md-fab md-mini fa fa-google-plus" aria-label="google-plus">
+            </md-button>
+        </div>
+    </div>
+</body>
+
+</html>
