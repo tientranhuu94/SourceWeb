@@ -17,7 +17,8 @@ angular.module('YourApp', ['ngMaterial'])
                 image: './images/php.png',
                 name: 'PHP',
                 slogan: 'Server-side HTML embedded scripting language. It provides web developers with a full suite of tools for building dynamic websites'
-            }]
+            }],
+            link: ['home', 'tech', 'project', 'team', 'contact']
         }
 
         function onSwipeLeft() {
@@ -28,28 +29,17 @@ angular.module('YourApp', ['ngMaterial'])
 
         }
 
+        function gotoID(id) {
+            console.log(1);
+            
+            $('body').animate({
+                scrollTop: $("#" + id).offset().top
+            }, 1000)
+        }
+
 
         $scope.options = options;
+        $scope.gotoID = gotoID;
         $scope.onSwipeLeft = onSwipeLeft;
         $scope.onSwipeRight = onSwipeRight;
-    })
-    .directive('scrollOnClick', function() {
-        return {
-            restrict: 'A',
-            link: function(scope, $elm, attrs) {
-                var idToScroll = attrs.href;
-                console.log(1);
-                $elm.on('click', function() {
-                    var $target;
-                    if (idToScroll) {
-                        $target = $(idToScroll);
-                    } else {
-                        $target = $elm;
-                    }
-                    $('body').animate({
-                        scrollTop: $target.offset().top
-                    }, 'slow');
-                });
-            }
-        }
     });

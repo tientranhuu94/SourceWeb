@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
     <title>Horical - Better The world</title>
     <!-- CSS -->
     <link href="./css/angular-material.min.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- SCRIPT -->
+    <script src="./js/jquery.min.js"></script>
     <script src="./js/angular.min.js"></script>
     <script src="./js/angular-aria.min.js"></script>
     <script src="./js/angular-animate.min.js"></script>
@@ -31,13 +32,9 @@
                 <img src="./images/logo.png" alt="logo website">
             </div>
             <div flex="50" layout="row" layout-align="end center" hide show-gt-md>
-                <div>
-                    <a scroll-on-click href="#home">HOME</a>
+                <div ng-repeat="link in options.link">
+                    <a ng-click="gotoID(link)">{{link | uppercase}}</a>
                 </div>
-                <div><a scroll-on-click href="#tech">TEACH</a></div>
-                <div><a href="#projects">PROJECT</a></div>
-                <div><a href="#team">TEAM</a></div>
-                <div><a href="#contact">CONTACT</a></div>
             </div>
             <div flex hide-gt-md layout="row" layout-align="end center">
                 <md-button flex id="bars">
