@@ -36,8 +36,6 @@ angular.module('YourApp', ['ngMaterial'])
                 scrollTop: $("#" + id).offset().top
             }, 500)
         }
-
-
         $scope.options = options;
         $scope.gotoID = gotoID;
         $scope.onSwipeLeft = onSwipeLeft;
