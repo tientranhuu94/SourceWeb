@@ -115,6 +115,12 @@ p:nth-child(3) {
     height: 400px;
     width: 100%;
 }
+#tech > div:nth-child(2) div p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #40B1DD;
+
+}
 
 #tech > div:nth-child(2) div img {
     border: 20px solid #FFFFFF;

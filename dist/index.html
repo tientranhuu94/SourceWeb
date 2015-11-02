@@ -37,17 +37,17 @@
                 <div><a href="#team">TEAM</a></div>
                 <div><a href="#contact">CONTACT</a></div>
             </div>
-            <div  flex hide-gt-md layout="row" layout-align="end center">
+            <div flex hide-gt-md layout="row" layout-align="end center">
                 <md-button flex id="bars">
                     <i class="fa fa-bars"></i>
                 </md-button>
             </div>
         </md-toolbar>
         <div layout="row" layout-align="start center">
-            <div flex-offset="10" flex="30" layout-align="start center">
+            <div flex-offset="10" flex="30" flex-sm="80" layout-align="start center">
                 <p>Every Thing You Need Is Here!</p>
-                <p>SOFTWARE</p>
-                <p>& GAME</p>
+                <p hide-sm>SOFTWARE</p>
+                <p hide-sm>& GAME</p>
                 <div layout="row" layout-align="center center">
                     <md-button class="md-raised" flex="50">KNOW MORE</md-button>
                     <md-button class="md-raised" flex>PURCHASE NOW</md-button>
@@ -60,33 +60,10 @@
             <p>What we do?</p>
         </div>
         <div layout="row" layout-align="center start" layout-wrap>
-            <div flex="20" layout="column" layout-align="center center">
-                <img src="./images/nodejs.png" alt="nodejs">
-                <p>Nodejs</p>
-                <span>
-                Event-driven I/O server-side JavaScript environment based on V8. Includes API documentation, change-log, examples and announcements.
-            </span>
-            </div>
-            <div flex="20" layout="column" layout-align="center center">
-                <img src="./images/aws.png" alt="nodejs">
-                <p>AWS</p>
-                <span>
-                Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use.
-            </span>
-            </div>
-            <div flex="20" layout="column" layout-align="center center">
-                <img src="./images/rails.png" alt="nodejs">
-                <p>Ruby on Rail</p>
-                <span>
-                RoR home; full stack, Web application framework optimized for sustainable programming productivity ...
-            </span>
-            </div>
-            <div flex="20" layout="column" layout-align="center center">
-                <img src="./images/php.png" alt="nodejs">
-                <p>PHP</p>
-                <span>
-                Server-side HTML embedded scripting language. It provides web developers with a full suite of tools for building dynamic websites
-            </span>
+            <div flex="20" layout="column" layout-align="center center" ng-repeat="tech in options.tech track by $index">
+                <img ng-src="{{tech.image}}">
+                <p>{{tech.name}}</p>
+                <span>{{tech.slogan}}]</span>
             </div>
             <div flex="100" layout="row" layout-align="center start" id="btn-more" layout-wrap>
                 <div flex="20" layout="row" layout-align="center center">
