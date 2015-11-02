@@ -65,16 +65,7 @@
                 <span>{{tech.slogan}}]</span>
             </div>
             <div flex="100" layout="row" layout-align="center start" id="btn-more" layout-wrap>
-                <div flex="20" layout="row" layout-align="center center">
-                    <md-button class="md-raised">More</md-button>
-                </div>
-                <div flex="20" layout="row" layout-align="center center">
-                    <md-button class="md-raised">More</md-button>
-                </div>
-                <div flex="20" layout="row" layout-align="center center">
-                    <md-button class="md-raised">More</md-button>
-                </div>
-                <div flex="20" layout="row" layout-align="center center">
+                <div flex="20" layout="row" layout-align="center center" ng-repeat="more in [1,2,3,4]">
                     <md-button class="md-raised">More</md-button>
                 </div>
             </div>

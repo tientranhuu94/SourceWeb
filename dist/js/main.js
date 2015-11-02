@@ -34,7 +34,7 @@ angular.module('YourApp', ['ngMaterial'])
             
             $('body').animate({
                 scrollTop: $("#" + id).offset().top
-            }, 1000)
+            }, 500)
         }
 
 
