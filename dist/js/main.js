@@ -1,5 +1,5 @@
 angular.module('YourApp', ['ngMaterial'])
-    .controller("YourController", function($scope) {
+    .controller('YourController', function($scope) {
         options = {
             tech: [{
                 image: './images/nodejs.png',
@@ -27,7 +27,29 @@ angular.module('YourApp', ['ngMaterial'])
         function onSwipeRight() {
 
         }
+
+
         $scope.options = options;
         $scope.onSwipeLeft = onSwipeLeft;
         $scope.onSwipeRight = onSwipeRight;
+    })
+    .directive('scrollOnClick', function() {
+        return {
+            restrict: 'A',
+            link: function(scope, $elm, attrs) {
+                var idToScroll = attrs.href;
+                console.log(1);
+                $elm.on('click', function() {
+                    var $target;
+                    if (idToScroll) {
+                        $target = $(idToScroll);
+                    } else {
+                        $target = $elm;
+                    }
+                    $('body').animate({
+                        scrollTop: $target.offset().top
+                    }, 'slow');
+                });
+            }
+        }
     });
