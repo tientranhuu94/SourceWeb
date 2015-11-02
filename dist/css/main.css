@@ -71,7 +71,7 @@ p:nth-child(3) {
     font-weight: bold;
 }
 
-#home > button {
+#home > div:nth-child(2) button {
     margin: 0px;
     padding: 0px;
     border-radius: 0px;
