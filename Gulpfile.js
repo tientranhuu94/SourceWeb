@@ -6,6 +6,7 @@ var gulp = require('gulp'); // gulp build source
 var env = require('gulp-env');
 var rename = require('gulp-rename');
 var source = require('vinyl-source-stream');
+var uglify = require('gulp-uglify');
 
 var del = require('del'), // delate old file
     jshint = require('gulp-jshint'), // hint error in your code
@@ -213,17 +214,17 @@ gulp.task('watch', ['lint'], function() {
     gulp.watch('./dist/**').on('change', refresh.changed);
 });
 
-gulp.task('set-env-dev', function() {
+gulp.task('set-env-prod', function() {
     env({
         vars: {
-            NODE_ENV: 'development',
-            port: '5000'
+            NODE_ENV: 'production',
+            port: '80'
         }
     })
 });
 
 // Dev task
-gulp.task('dev', ['set-env-dev', 'clean', 'views', 'images', 'fonts', 'styles', 'css', 'lint', 'browserify', 'javascript'], function() {});
+gulp.task('prod', ['set-env-prod', 'clean', 'views', 'images', 'fonts', 'styles', 'css', 'lint', 'browserify', 'javascript'], function() {});
 
 
-gulp.task('default', ['dev', 'watch']);
+gulp.task('default', ['prod', 'watch']);
