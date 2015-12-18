@@ -1,0 +1,29 @@
+{
+  "name": "website-horical",
+  "description": "Website horical company",
+  "main": "index.js",
+  "authors": [
+    "slinker <tien.tranhuu94@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/tientranhuu94/website",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.8",
+    "angular-aria": "~1.4.8",
+    "angular-animate": "~1.4.8",
+    "angular-strap": "~2.3.6",
+    "angular-local-storage": "~0.2.3",
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.5.0"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "website-horical",
+  "version": "1.0.0",
+  "description": "Website horical company",
+  "main": "index.js",
+  "scripts": {
+    "test": "demo 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tientranhuu94/website.git"
+  },
+  "author": "slinker <tien.tranhuu94@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tientranhuu94/website/issues"
+  },
+  "homepage": "https://github.com/tientranhuu94/website#readme",
+  "devDependencies": {
+    "bower": "^1.7.1",
+    "browserify": "^12.0.1",
+    "connect-livereload": "^0.5.4",
+    "del": "^2.2.0",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-env": "^0.2.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.2.0",
+    "jshint": "^2.8.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
